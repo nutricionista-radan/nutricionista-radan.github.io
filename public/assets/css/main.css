@@ -4923,6 +4923,17 @@ input, select, textarea {
 	-webkit-text-justify: inter-word;
   }
   
+.photo-credit {
+  text-align: center;
+  font-size: 0.8em;
+  margin-top: 0.5em;
+  color: #888;
+  font-style: italic;
+}
+
+.photo-credit a {
+  color: inherit;
+}
 
 /**********************************************/
 

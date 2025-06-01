@@ -39,6 +39,14 @@ async function loadPost() {
     document.getElementById("post-banner").src = post.banner;
     document.getElementById("post-content").innerHTML = post.content;
 
+    if (post.photoBy) {
+      const bannerImage = document.getElementById("post-banner");
+      const credit = document.createElement("p");
+      credit.className = "photo-credit";
+      credit.innerHTML = post.photoBy;
+      bannerImage.parentNode.insertBefore(credit, bannerImage.nextSibling);
+    }
+
     const tagsList = document.getElementById("post-tags");
     post.tags?.forEach(tag => {
       if (tag && tag.trim()) {
