@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', handleScroll);
 });
 
-fetch('/json/posts.json')
+fetch('/json/featured-posts.json')
   .then(response => response.json())
   .then(posts => {
     const container = document.querySelector('.posts');
